@@ -59,7 +59,7 @@ class SettingsRepositoryImpl : SettingsRepository {
         set(value) = prefs.edit { putBoolean("miuix_monet", value) }
 
     override var keyColor: Int
-        get() = prefs.getInt("key_color", 0)
+        get() = prefs.getInt("key_color", 0xFF26A69A.toInt())
         set(value) = prefs.edit { putInt("key_color", value) }
 
     override var colorStyle: String
@@ -83,7 +83,7 @@ class SettingsRepositoryImpl : SettingsRepository {
         set(value) = prefs.edit { putInt("pager_interception_mode", value.coerceIn(0, 2)) }
 
     override var enableBlur: Boolean
-        get() = prefs.getBoolean("enable_blur", false)
+        get() = prefs.getBoolean("enable_blur", true)
         set(value) = prefs.edit { putBoolean("enable_blur", value) }
 
     override var enableFloatingBottomBar: Boolean
