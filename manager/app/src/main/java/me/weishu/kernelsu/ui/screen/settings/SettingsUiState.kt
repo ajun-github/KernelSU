@@ -12,7 +12,7 @@ data class SettingsUiState(
     val checkModuleUpdate: Boolean = true,
     val themeMode: Int = 0,
     val miuixMonet: Boolean = false,
-    val keyColor: Int = 0,
+    val keyColor: Int = 0xFF26A69A.toInt(),
     val colorStyle: String = PaletteStyle.TonalSpot.name,
     val colorSpec: String = ColorSpec.SpecVersion.SPEC_2025.name,
     val enablePredictiveBack: Boolean = false,
